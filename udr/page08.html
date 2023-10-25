@@ -1,0 +1,17 @@
+<?php 
+	$root = '../';
+	require $root.'_lib/define.php';
+	require $root.'_lib/tpl.php';
+	include $root.'header.php';
+	$pageroot = new Head($root);
+	$pageroot->PageRoot();
+?>
+	<section class="demo section">
+		<a href="<?= $root; ?>images/<?= IMAGE08; ?>.jpg" target="_blank"><img src="<?= $root; ?>images/<?= IMAGE08; ?>.jpg" alt=""></a>
+	</section>
+
+
+<?php
+	$pageroot->PageRoot();
+	include $root.'footer.php';
+?>
